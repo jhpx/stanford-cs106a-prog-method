@@ -382,6 +382,7 @@ public class Yahtzee extends GraphicsProgram implements YahtzeeConstants {
             break;
         }
         case YAHTZEE:
+            returnFlag = true;
             for (int i = 0; i < diceArray.length - 1; i++) {
                 if (diceArray[i] != diceArray[i + 1]) {
                     returnFlag = false;
